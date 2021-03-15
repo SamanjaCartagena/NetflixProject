@@ -1,4 +1,5 @@
 import React,{useState, useEffect} from 'react'
+import YouTube from 'react-youtube';
 import axios from './axios';
 import requests from './requests';
 import './Row.css';
@@ -39,6 +40,7 @@ console.table(movies);
          ))}
 
             </div>
+            <YouTube videoId={trailerUrl} opts={opts}/>
             {/* */}
         </div>
     )
